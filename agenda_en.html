@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>521 Aon Reinsurance Forum - Agenda</title>
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="May 20-22, 2026 · Taoxichuan Hyatt Regency Jingdezhen · Aon Reinsurance Forum Agenda">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --primary-teal: #2A9D8F;
+            --primary-coral: #E76F51;
+            --porcelain-blue: #1D4E6F;
+            --porcelain-light: #8ECAE6;
+            --porcelain-bg: #F5F5F0;
+            --bg-cream: #F8F9FA;
+            --bg-soft: #E9F5F3;
+            --text-dark: #264653;
+            --text-muted: #6B8A8A;
+            --aon-gray: #63666A;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-soft) 50%, #F0F4F4 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .bg-waves {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .wave {
+            position: absolute;
+            width: 300%;
+            height: auto;
+            opacity: 0.15;
+            animation: drift 40s linear infinite;
+        }
+
+        .wave:nth-child(1) {
+            top: -5%;
+            left: -50%;
+            animation-duration: 17.5s;
+            animation-direction: reverse;
+            opacity: 0.12;
+        }
+
+        .wave:nth-child(2) {
+            top: -10%;
+            left: -20%;
+            animation-duration: 14s;
+            opacity: 0.08;
+            transform: scaleY(1.2);
+        }
+
+        .wave:nth-child(3) {
+            top: 75%;
+            left: 0%;
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: 0.1;
+            transform: scaleY(1.5);
+        }
+
+        @keyframes drift {
+            0% { transform: translateX(0) rotate(0deg); }
+            50% { transform: translateX(-25%) rotate(2deg); }
+            100% { transform: translateX(0) rotate(0deg); }
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 15px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .aon-logo {
+            width: 100px;
+            height: 30px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .aon-logo svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'Noto Serif SC', serif;
+            background: linear-gradient(135deg, #1D4E6F 0%, #2A9D8F 50%, #1D4E6F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .date-badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, var(--primary-teal), var(--porcelain-blue));
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(42, 157, 143, 0.25);
+        }
+
+        .agenda-container {
+            width: 95%;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .day-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 18px 15px;
+            margin-bottom: 15px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(29, 78, 111, 0.08);
+            overflow: hidden;
+        }
+
+        .day-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-teal), var(--porcelain-blue));
+        }
+
+        .day-title {
+            font-size: 17px;
+            color: var(--porcelain-blue);
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(42, 157, 143, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .day-title::before {
+            content: '📅';
+            font-size: 20px;
+        }
+
+        .day-title.special::before {
+            content: '🎯';
+        }
+
+        .day-title.activity::before {
+            content: '🎨';
+        }
+
+        .day-title.closing::before {
+            content: '🏁';
+        }
+
+        /* Opening universal agenda */
+        .opening-section {
+            margin-bottom: 12px;
+        }
+
+        .section-label {
+            font-size: 14px;
+            color: var(--primary-teal);
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding: 6px 12px;
+            background: rgba(42, 157, 143, 0.08);
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        /* Agenda item styles */
+        .agenda-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .agenda-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .agenda-time {
+            min-width: 80px;
+            color: var(--primary-coral);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.5;
+            padding-top: 2px;
+        }
+
+        .agenda-content {
+            flex: 1;
+        }
+
+        .agenda-text {
+            color: var(--text-dark);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .agenda-text strong {
+            color: var(--porcelain-blue);
+            font-weight: 600;
+        }
+
+        .speaker {
+            display: block;
+            margin-top: 4px;
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        /* Tea break / rest styles */
+        .break-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: rgba(42, 157, 143, 0.06);
+            align-items: center;
+        }
+
+        .break-time {
+            min-width: 80px;
+            color: var(--primary-teal);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .break-text {
+            flex: 1;
+            color: var(--primary-teal);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Dual-venue layout - mobile single column */
+        .parallel-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .parallel-column {
+            background: rgba(233, 245, 243, 0.5);
+            border-radius: 12px;
+            padding: 15px;
+            border: 1px solid rgba(42, 157, 143, 0.1);
+        }
+
+        .column-title {
+            text-align: center;
+            color: var(--porcelain-blue);
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-teal);
+            font-size: 15px;
+        }
+
+        .column-agenda {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed rgba(42, 157, 143, 0.2);
+        }
+
+        .column-agenda:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .column-time {
+            color: var(--primary-coral);
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .column-text {
+            color: var(--text-dark);
+            font-size: 14px;
+            line-height: 1.5;
+            padding-left: 8px;
+            border-left: 2px solid rgba(42, 157, 143, 0.15);
+        }
+
+        .column-text strong {
+            color: var(--porcelain-blue);
+            font-weight: 600;
+        }
+
+        .column-speaker {
+            display: block;
+            margin-top: 4px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .pc-space {
+            margin-bottom: 6px;
+            padding-bottom: 6px;
+            border-bottom: 0.5px dashed rgba(42, 157, 143, 0.2);
+        }
+
+        /* Special activity styles */
+        .special-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--primary-coral);
+            color: #fff;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        /* Footer note */
+        .footer-note {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(29, 78, 111, 0.05);
+            border-radius: 10px;
+        }
+
+        .footer-note p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-note strong {
+            color: var(--porcelain-blue);
+        }
+
+        /* Desktop adaptation */
+        @media (min-width: 768px) {
+            body {
+                font-size: 15px;
+            }
+
+            .title {
+                font-size: 32px;
+                letter-spacing: 6px;
+            }
+
+            .header {
+                padding: 40px 20px 30px;
+            }
+
+            .day-title {
+                font-size: 20px;
+            }
+
+            .parallel-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+
+            .agenda-container {
+                width: 92%;
+                max-width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Flowing curve background -->
+    <div class="bg-waves">
+        <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#2A9D8F;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#E76F51;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#grad1)" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+        <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#1D4E6F;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2A9D8F;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#grad2)" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,112C672,128,768,192,864,208C960,224,1056,192,1152,176C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+        <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#e75151;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#8ECAE6;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#grad3)" d="M0,96L48,80C96,64,192,32,288,56C384,80,480,104,576,96C672,88,768,56,864,72C960,88,1056,144,1152,160C1248,176,1344,168,1392,160L1440,152L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="aon-logo">
+            <svg viewBox="0 0 95 36" fill="#EB0017" width="100%" height="100%">
+                <path d="M15.2738 0L0 35.1921H7.28163L9.80267 29.1412H22.7669L20.0438 22.9385H12.3855L18.1109 9.19256L28.9413 35.1921H36.2219L20.9491 0H15.2738Z"/>
+                <path d="M88.2584 5V22.9027L73.8196 5H68V35.1626H74.6799V16.5577L89.6889 35.1626H94.9383V5H88.2584Z"/>
+                <path d="M49.8149 4C41.0943 4 34 11.0943 34 19.8149C34 28.5355 41.0943 35.6308 49.8149 35.6308C58.5355 35.6308 65.6298 28.5365 65.6298 19.8159C65.6298 11.0953 58.5355 4 49.8149 4ZM49.8149 28.9509C44.777 28.9509 40.6788 24.8528 40.6788 19.8149C40.6788 14.777 44.777 10.6788 49.8149 10.6788C54.8528 10.6788 58.951 14.777 58.951 19.8149C58.951 24.8528 54.8528 28.9509 49.8149 28.9509Z"/>
+            </svg>
+        </div>
+        <h1 class="title">521 Aon Reinsurance Forum<br>Conference Agenda</h1>
+        <p class="subtitle">Craftsmanship in Promise, Longstanding Protection</p>
+        <div class="date-badge">May 20-22, 2026 · Taoxichuan Hyatt Regency Jingdezhen</div>
+    </header>
+
+    <!-- Agenda Content -->
+    <div class="agenda-container">
+        
+        <!-- May 20 Check-in -->
+        <div class="day-section">
+            <h2 class="day-title">May 20 (Wednesday)</h2>
+            <div class="agenda-item">
+                <span class="agenda-time">All Day</span>
+                <span class="agenda-content">
+                    <span class="agenda-text"><strong>Check-in & Registration</strong></span>
+                </span>
+            </div>
+        </div>
+
+        <!-- May 21 Morning Session -->
+        <div class="day-section">
+            <h2 class="day-title special">May 21 (Thursday) Morning Session</h2>
+            
+            <!-- Opening Session -->
+            <div class="opening-section">
+                <div class="section-label">Plenary Session Opening</div>
+                
+                <div class="agenda-item">
+                    <span class="agenda-time">08:50 - 09:00</span>
+                    <span class="agenda-content">
+                        <span class="agenda-text"><strong>Registration</strong></span>
+                    </span>
+                </div>
+                
+                <div class="agenda-item">
+                    <span class="agenda-time">09:00 - 09:20</span>
+                    <span class="agenda-content">
+                        <span class="agenda-text"><strong>Opening</strong> - Welcome Address</span>
+                    </span>
+                </div>
+                
+                <div class="agenda-item">
+                    <span class="agenda-time">09:20 - 09:30</span>
+                    <span class="agenda-content">
+                        <span class="agenda-text">Breakout Session Introduction & Selection</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Dual-venue Parallel Sessions -->
+            <div style="text-align: center; color: var(--primary-coral); font-weight: 600; margin: 15px 0 10px; font-size: 14px;">
+                ⬇ Two breakout sessions will run simultaneously after the opening. You may freely choose which to attend ⬇
+            </div>
+
+            <div class="parallel-section">
+                <!-- Venue 1: Life & Health Reinsurance Sub-Forum -->
+                <div class="parallel-column">
+                    <div class="column-title">🏥 Life & Health Reinsurance Sub-Forum</div>
+                    
+                    <div class="column-agenda">
+                        <div class="column-time">09:30 - 10:15</div>
+                        <div class="column-text">
+                            <strong>The Dual-Catalogue Era of Medical Insurance: New Positioning and Opportunities for Commercial Insurance</strong>
+                            <span class="column-speaker">Yingxu Zhao | Founder, Beijing Jianbao Technology Co., Ltd.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="column-agenda">
+                        <div class="column-time">10:15 - 10:45</div>
+                        <div class="column-text">
+                            <strong>Market Opportunities and Risk Balance for Coverage of People with Pre-existing Conditions</strong>
+                            <span class="column-speaker">Rongze Han | Head of Life & Health Underwriting, Korean Reinsurance Company</span>
+                        </div>
+                    </div>
+                    
+                    <div class="break-row">
+                        <span class="break-time">10:45 - 11:00</span>
+                        <span class="break-text">☕ Coffee Break</span>
+                    </div>
+                    
+                    <div class="column-agenda">
+                        <div class="column-time">11:00 - 11:45</div>
+                        <div class="column-text">
+                            <strong>Traditional Chinese Medicine in the Workplace</strong>
+                            <span class="column-speaker">Lei Wang | General Manager, Life Reinsurance Department, China Taiping Reinsurance</span>
+                        </div>
+                    </div>
+                    
+                    <div class="column-agenda">
+                        <div class="column-time">11:45 - 12:30</div>
+                        <div class="column-text">
+                            <strong>Trends in Employee Benefits and Risk Protection Management for Chinese Companies Going Global</strong>
+                            <span class="column-speaker">Ivy Zeng | Head of Health & Benefits Solutions Consulting, Aon-COFCO</span>
+                        </div>
+                    </div>
+                    
+                    <div class="column-agenda">
+                        <div class="column-time">12:30 - 12:45</div>
+                        <div class="column-text"><strong>Q&A Session</strong></div>
+                    </div>
+                </div>
+
+                <!-- Venue 2: P&C Innovative Business Reinsurance Sub-Forum -->
+                <div class="parallel-column">
+                    <div class="column-title">🚗 P&C Innovative Reinsurance Sub-Forum</div>
+                    
+                    <div class="column-agenda">
+                        <div class="column-time">09:30 - 10:45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Energy Vehicles</div>
+                        <div class="column-text">
+                            <strong>Competitive Landscape and Differentiation Paths for NEVs Going Global</strong>
+                            <span class="column-speaker">Maggie Chen | National Head of Automotive Industry, Aon-COFCO & Deputy General Manager, Shanghai Branch</span>
+                        </div>
+                        <div class="pc-space"></div>
+                        <div class="column-time"></div>
+                        <div class="column-text">
+                            <strong>Direct-Reinsurance Integration: Innovative Product Design for NEVs Going Global</strong>
+                            <span class="column-speaker">Joyce Lang | Head of NEV Reinsurance, Greater China, Aon</span>
+                        </div>
+                    </div>
+                    
+                    <div class="break-row">
+                        <span class="break-time">10:45 - 11:00</span>
+                        <span class="break-text">☕ Coffee Break</span>
+                    </div>
+                    
+                    <div class="column-agenda">
+                        <div class="column-time">11:00 - 12:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Center</div>
+                        <div class="column-text">
+                            <strong>AI Computing Center: Product Innovation and Market Practice</strong>
+                            <span class="column-speaker">Yakui Qi | Deputy General Manager, Jiangxi Tianli Technology</span>
+                        </div>
+                        <div class="pc-space"></div>
+                        <div class="column-time"></div>
+                        <div class="column-text">
+                            <strong>Front-End Commercial Risks and Reinsurance Solutions for Data Centers</strong>
+                            <span class="column-speaker">Hanbo Yang | General Manager, Shanghai Huangpu Branch, Pacific Property Insurance</span>
+                        </div>
+                    </div>
+
+                    <div class="column-agenda">
+                        <div class="column-time">12:00 - 12:45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Green Energy</div>
+                        <div class="column-text">
+                            <strong>Challenges, Opportunities, and Paths of Global Energy Transition</strong>
+                            <span class="column-speaker">Timmy Tian | Director, Energy Team, Large Commercial Risk, Aon-COFCO</span>
+                        </div>
+                        <div class="pc-space"></div>
+                        <div class="column-time"></div>
+                        <div class="column-text">
+                            <strong>Green Energy Insurance Development: Risk, Market, and Future from a Reinsurance Perspective</strong>
+                            <span class="column-speaker">Tracy Ma | Head of Marine & Energy Reinsurance, Greater China, Aon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="break-row" style="margin-top: 15px; justify-content: center;">
+                <span class="break-time">12:45 - 14:00</span>
+                <span class="break-text">🍽️ Lunch</span>
+            </div>
+        </div>
+
+        <!-- May 21 Afternoon Session -->
+        <div class="day-section">
+            <h2 class="day-title activity">May 21 (Thursday) Afternoon Session</h2>
+            
+            <div class="agenda-item">
+                <span class="agenda-time">14:00 - 14:45</span>
+                <span class="agenda-content">
+                    <span class="agenda-text"><strong>🤖 Aon Facultative/Treaty AI Applications</strong></span>
+                </span>
+            </div>
+
+            <div class="agenda-item">
+                <span class="agenda-time">14:45 - 15:45</span>
+                <span class="agenda-content">
+                    <span class="special-badge"><strong>Special Activity</strong></span>
+                    <span class="speaker" style="color: var(--text-muted); margin-top: 8px;">Please be sure to attend unless you have other special arrangements</span>
+                </span>
+            </div>
+
+            <div class="agenda-item">
+                <span class="agenda-time">15:45 - 16:15</span>
+                <span class="agenda-content">
+                    <span class="agenda-text">☕ Coffee Break & Walk to Activity Venue</span>
+                </span>
+            </div>
+
+            <div class="agenda-item">
+                <span class="agenda-time">16:15 - 18:00</span>
+                <span class="agenda-content">
+                    <span class="agenda-text"><strong>🎨 Pottery Experience</strong></span>
+                    <span class="speaker">Jingdezhen, the Porcelain Capital — Handcrafted with Artisan Spirit</span>
+                </span>
+            </div>
+
+            <div class="break-row">
+                <span class="break-time">18:00 - 20:00</span>
+                <span class="break-text">🍽️ Dinner</span>
+            </div>
+        </div>
+
+        <!-- May 22 -->
+        <div class="day-section">
+            <h2 class="day-title closing">May 22 (Friday)</h2>
+            
+            <div class="agenda-item">
+                <span class="agenda-time">Morning</span>
+                <span class="agenda-content">
+                    <span class="agenda-text"><strong>Closed-Door Meeting</strong></span>
+                </span>
+            </div>
+
+            <div class="agenda-item">
+                <span class="agenda-time">Noon</span>
+                <span class="agenda-content">
+                    <span class="agenda-text">Lunch</span>
+                </span>
+            </div>
+
+            <div class="agenda-item">
+                <span class="agenda-time">Afternoon</span>
+                <span class="agenda-content">
+                    <span class="agenda-text">Departure</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="footer-note">
+            <p><strong>Friendly Reminder</strong></p>
+            <p>📍 Venue: Taoxichuan Hyatt Regency Jingdezhen</p>
+            <p>For any questions, please contact the conference team or your account manager</p>
+        </div>
+
+    </div>
+</body>
+</html>
